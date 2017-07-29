@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seeu.shopper.product.dao.ProductTagMapper">
+  <resultMap id="BaseResultMap" type="com.seeu.shopper.product.model.ProductTag">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="tag_id" jdbcType="INTEGER" property="tagId" />
+    <result column="tag_name" jdbcType="VARCHAR" property="tagName" />
+    <result column="tag_icon" jdbcType="VARCHAR" property="tagIcon" />
+    <result column="tag_addition" jdbcType="VARCHAR" property="tagAddition" />
+    <result column="tag_creatdate" jdbcType="TIMESTAMP" property="tagCreatdate" />
+  </resultMap>
+</mapper>

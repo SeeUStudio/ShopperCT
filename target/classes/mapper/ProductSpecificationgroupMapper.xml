@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seeu.shopper.product.dao.ProductSpecificationgroupMapper">
+  <resultMap id="BaseResultMap" type="com.seeu.shopper.product.model.ProductSpecificationgroup">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="specificationgroup_id" jdbcType="INTEGER" property="specificationgroupId" />
+    <result column="specificationgroup_category" jdbcType="INTEGER" property="specificationgroupCategory" />
+    <result column="specificationgourp_name" jdbcType="VARCHAR" property="specificationgourpName" />
+  </resultMap>
+</mapper>

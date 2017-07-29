@@ -9,7 +9,6 @@ import com.seeu.shopper.user.service.UserFavoriteService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import javax.websocket.server.PathParam;
 import java.util.List;
 
 /**
@@ -45,7 +44,7 @@ public class UserFavoriteController {
     }
 
     @GetMapping("/{page}/{size}")
-    public Result list(@PathParam(value="page") Integer page, @PathParam(value="size") Integer size) {
+    public Result list(@PathVariable(value="page") Integer page, @PathVariable(value="size") Integer size) {
         PageHelper.startPage(page, size);
         List<UserFavorite> list = userFavoriteService.findAll();
         PageInfo pageInfo = new PageInfo(list);

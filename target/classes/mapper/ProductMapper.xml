@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seeu.shopper.product.dao.ProductMapper">
+  <resultMap id="BaseResultMap" type="com.seeu.shopper.product.model.Product">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    <result column="product_subname" jdbcType="VARCHAR" property="productSubname" />
+    <result column="product_categoryid" jdbcType="INTEGER" property="productCategoryid" />
+    <result column="product_cost" jdbcType="INTEGER" property="productCost" />
+    <result column="product_price" jdbcType="INTEGER" property="productPrice" />
+    <result column="product_img" jdbcType="VARCHAR" property="productImg" />
+    <result column="product_unit" jdbcType="VARCHAR" property="productUnit" />
+    <result column="product_tag" jdbcType="VARCHAR" property="productTag" />
+    <result column="product_status" jdbcType="INTEGER" property="productStatus" />
+    <result column="product_createdate" jdbcType="TIMESTAMP" property="productCreatedate" />
+    <result column="product_updatedate" jdbcType="TIMESTAMP" property="productUpdatedate" />
+    <result column="product_keyword" jdbcType="VARCHAR" property="productKeyword" />
+  </resultMap>
+</mapper>
