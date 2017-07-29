@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seeu.shopper.user.dao.UserAddressMapper">
+  <resultMap id="BaseResultMap" type="com.seeu.shopper.user.model.UserAddress">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="addr_id" jdbcType="INTEGER" property="addrId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="addr_status" jdbcType="INTEGER" property="addrStatus" />
+    <result column="postcode" jdbcType="VARCHAR" property="postcode" />
+  </resultMap>
+</mapper>
