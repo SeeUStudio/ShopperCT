@@ -45,7 +45,7 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
     @Value("${spring.profiles.active}")
     private String env;//当前激活的配置文件
 
-    
+
     @Autowired
     JwtUtil jwtUtil;
 

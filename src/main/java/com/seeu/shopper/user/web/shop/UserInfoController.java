@@ -20,6 +20,11 @@ public class UserInfoController {
     @Resource
     private UserInfoService userInfoService;
 
+    @PostMapping
+    public Result add(UserInfo userInfo) {
+        userInfoService.save(userInfo);
+        return ResultGenerator.genSuccessResult();
+    }
 
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable Integer id) {
