@@ -43,8 +43,8 @@ public class UserCouponController {
         return ResultGenerator.genSuccessResult(userCoupon);
     }
 
-    @GetMapping
-    public Result list(Integer page, Integer size) {
+    @GetMapping("/{page}/{size}")
+    public Result list(@PathVariable(value="page") Integer page, @PathVariable(value="size") Integer size) {
         PageHelper.startPage(page, size);
         List<UserCoupon> list = userCouponService.findAll();
         PageInfo pageInfo = new PageInfo(list);

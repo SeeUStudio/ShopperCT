@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import javax.websocket.server.PathParam;
 import java.util.List;
 
 /**
@@ -31,7 +30,7 @@ public class Ad9UserAddressController {
     }
 
     @GetMapping("/{page}/{size}")
-    public Result list(@PathParam(value="page") Integer page, @PathParam(value="size") Integer size) {
+    public Result list(@PathVariable(value="page") Integer page, @PathVariable(value="size") Integer size) {
         PageHelper.startPage(page, size);
         List<UserAddress> list = userAddressService.findAll();
         PageInfo pageInfo = new PageInfo(list);
