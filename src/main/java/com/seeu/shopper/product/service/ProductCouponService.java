@@ -7,5 +7,5 @@ import com.seeu.core.Service;
  * Created by neoxiaoyi on 2017/08/04.
  */
 public interface ProductCouponService extends Service<ProductCoupon> {
-
+        void exportCSV(String cid, int start, int count);
 }

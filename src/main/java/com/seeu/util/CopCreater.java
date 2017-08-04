@@ -3,6 +3,7 @@ package com.seeu.util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by neo on 03/08/2017.
@@ -10,6 +11,7 @@ import java.util.ArrayList;
  * 优惠券生成、校验
  */
 public class CopCreater {
+    private ArrayList<String> list = new ArrayList<>();
     public static void main(String[] args) {
         CopCreater copCreater = new CopCreater();
         copCreater.create("AE86", 10000, 2);
@@ -33,7 +35,6 @@ public class CopCreater {
             return "起始值错误";
         }
         // ~
-        ArrayList<String> list = new ArrayList<>();
         int end = start + count;
         for (int i = start; i < end; i++) {
             String NUM = form6bit(Integer.toHexString(i));
@@ -120,5 +121,8 @@ public class CopCreater {
         }
         buffer.append(src);
         return buffer.toString();
+    }
+    public List<String> getList(){
+        return list;
     }
 }
