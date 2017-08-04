@@ -4,7 +4,7 @@ import com.seeu.core.Service;
 
 
 /**
- * Created by neoxiaoyi on 2017/07/29.
+ * Created by neoxiaoyi on 2017/08/04.
  */
 public interface ProductImgService extends Service<ProductImg> {
 
