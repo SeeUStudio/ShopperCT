@@ -1,11 +1,11 @@
 package com.seeu.shopper.admin.web.admin;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.seeu.core.Result;
 import com.seeu.core.ResultGenerator;
 import com.seeu.shopper.admin.model.Admin;
 import com.seeu.shopper.admin.service.AdminService;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -19,7 +19,6 @@ import java.util.List;
 public class Ad9AdminController {
     @Resource
     private AdminService adminService;
-
     @PostMapping
     public Result add(Admin admin) {
         adminService.save(admin);

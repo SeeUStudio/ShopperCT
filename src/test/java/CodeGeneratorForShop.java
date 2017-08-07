@@ -36,20 +36,21 @@ public class CodeGeneratorForShop {
     private static final String DATE = new SimpleDateFormat("yyyy/MM/dd").format(new Date());//@date
 
     public static void main(String[] args) {
-        genCode("product", "product");
-        genCode("product", "product_attribute");
-        genCode("product", "product_category");
-        genCode("product", "product_coupon");
-        genCode("product", "product_discount");
-        genCode("product", "product_full_reduction");
-        genCode("product", "product_img");
-        genCode("product", "product_intro");
-        genCode("product", "product_param");
-        genCode("product", "product_specification");
-        genCode("product", "product_specificationgroup");
-        genCode("product", "product_stock");
-        genCode("product", "product_tag");
-        genCode("user", "user_coupon");
+        genCode("order","order_log");
+//        genCode("product", "product");
+//        genCode("product", "product_attribute");
+//        genCode("product", "product_category");
+//        genCode("product", "product_coupon");
+//        genCode("product", "product_discount");
+//        genCode("product", "product_full_reduction");
+//        genCode("product", "product_img");
+//        genCode("product", "product_intro");
+//        genCode("product", "product_param");
+//        genCode("product", "product_specification");
+//        genCode("product", "product_specificationgroup");
+//        genCode("product", "product_stock");
+//        genCode("product", "product_tag");
+//        genCode("user", "user_coupon");
 
     }
 

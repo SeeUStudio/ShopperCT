@@ -43,8 +43,8 @@ public class Ad9${modelNameUpperCamel}Controller {
         return ResultGenerator.genSuccessResult(${modelNameLowerCamel});
     }
 
-    @GetMapping
-    public Result list(Integer page, Integer size) {
+    @GetMapping("/{page}/{size}")
+    public Result list(@PathVariable(value = "page") Integer page,@PathVariable(value = "size") Integer size) {
         PageHelper.startPage(page, size);
         List<${modelNameUpperCamel}> list = ${modelNameLowerCamel}Service.findAll();
         PageInfo pageInfo = new PageInfo(list);
